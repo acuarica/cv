@@ -123,14 +123,16 @@
   \savebox{\makecvtitlepicturebox}{%
     \ifthenelse{\isundefined{\@photo}}%
     {}%
-    {%
+    {% 
       \hspace*{\separatorcolumnwidth}%
       \color{color1}%
       \setlength{\fboxrule}{\@photoframewidth}%
       \ifdim\@photoframewidth=0pt%
         \setlength{\fboxsep}{0pt}\fi%
-      \framebox{\includegraphics[width=\@photowidth]{\@photo}}}}%
+        \ \includegraphics[width=\@photowidth]{\@photo}
+    }}%
   % name and title
+  \usebox{\makecvtitlepicturebox} \ %
   \newlength{\makecvtitledetailswidth}\settowidth{\makecvtitledetailswidth}{\usebox{\makecvtitledetailsbox}}%
   \newlength{\makecvtitlepicturewidth}\settowidth{\makecvtitlepicturewidth}{\usebox{\makecvtitlepicturebox}}%
   \ifthenelse{\lengthtest{\makecvtitlenamewidth=0pt}}% check for dummy value (equivalent to \ifdim\makecvtitlenamewidth=0pt)
@@ -142,9 +144,9 @@
   \end{minipage}%
   \hfill%
   % detailed information
-  \llap{\usebox{\makecvtitledetailsbox}}% \llap is used to suppress the width of the box, allowing overlap if the value of makecvtitlenamewidth is forced
+  \llap{\usebox{\makecvtitledetailsbox}}\\[1.1em]% \llap is used to suppress the width of the box, allowing overlap if the value of makecvtitlenamewidth is forced
   % optional photo (rendering)
-  \usebox{\makecvtitlepicturebox}\\[2.5em]%
+  % \usebox{\makecvtitlepicturebox}\\[2.5em]%
   % optional quote
   \ifthenelse{\isundefined{\@quote}}%
     {}%
