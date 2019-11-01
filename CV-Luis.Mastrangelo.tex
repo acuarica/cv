@@ -1,0 +1,95 @@
+
+% Possible document class options include:
+%  - Font size: 10pt | 11pt | 12pt
+%  - Paper size: a4paper | letterpaper | a5paper | legalpaper | executivepaper |  landscape
+%  - Font family: sans | roman
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic}
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{blue}
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhead[L]{Curriculum Vitae}
+%\fancyhead[R]{Luis A. Mastrangelo}
+
+\usepackage[spanish, activeacute]{babel}
+\usepackage[scale=0.77]{geometry}
+
+\setlength{\hintscolumnwidth}{3.35cm}
+
+\firstname{Luis}
+\familyname{Mastrangelo, \emph{Ph.D.}}
+\title{Software Development Engineer}
+\address{Via Zurigo 1}{6900 Lugano, Switzerland}
+\mobile{+41 789 44 2022}
+\email{luis.mastrangelo@usi.ch}
+% \homepage{acuarica.gitlab.io/blog/}
+
+\begin{document}
+
+\makecvtitle
+
+% \section{Personal Details}
+
+% \cvitem{Date of birth}{31/01/1981 \ \ \ \ \ \ \ \ \ Place of birth \ Ciudad Aut'onoma de Buenos Aires, Argentina}
+% \cvitem{Place of birth}{Ciudad Aut'onoma de Buenos Aires, Argentina}
+% \cvitem{Nationality}{Argentine \ \ \ \ \ \ \ \ \ Marital status \ Single }
+% \cvitem{Marital status}{Single}
+
+\section{Education}
+\cventry{Apr 2013--June 2019}{Ph.D. Graduate, Computer Science}{University of Lugano}{Switzerland}{}{
+Subject: programming languages research in Java and Haskell, runtime systems and virtual machines with C++, software verification and declarative programming, data analysis using R and Python \\
+Advisors: Prof. Matthias Hauswirth and Prof. Nathaniel Nystrom \\
+Ph.D. Thesis: \emph{``When and How Java Developers Give Up Static Type Safety''}}
+\cventry{Jul 2012--Nov 2012}{Ph.D. Student, Computer Science}{University of Luxembourg}{Luxembourg}{}{Subject: automatic model based testing with focus on embedded systems.}
+\cventry{Apr 2007--Nov 2011}{Licentiate in Computer Science}{University of Buenos Aires}{Argentina}{}{
+This degree is considered by many institutions as being equivalent to an M.Sc. degree.}
+\cventry{Apr 2011--Oct 2011}{Internship}{INRIA/University of Strasbourg}{France}{}{Internship title: ``A Virtual Machine for Automatic Program Parallelization''.}
+\cventry{Apr 2003--Dec 2006}{Computer Analyst}{University of Buenos Aires}{Argentina}{}{
+This is a 3 years degree as part of the \emph{Licentiate in Computer Science} programme.}
+\cventry{Mar 1994--Nov 1999}{Secondary School Diploma in Informatics}{}{Buenos Aires, Argentina}{}{}
+
+\section{Professional Experience}
+\cventry{Current position \\ Aug 2019--\emph{to date}}{Technical Consultant}{Avaloq Banking Group AG}{Lugano, Switzerland}{}{IT infrastructure support for Monitoring Operations}
+\cventry{Dec 2006--Mar 2011}{Project Leader}{Recursiva S.R.L.}{Buenos Aires, Argentina}{}{Software engineering and architect roles using Java and C\# among others technologies.}
+\cventry{Mar--Jul 2006}{Network Administrator}{HS Eventos}{Buenos Aires, Argentina}{}{Technical service, software installation and maintenance of company network.}
+\cventry{Jul--Oct 2004}{Network Administrator}{Texpampa}{Buenos Aires, Argentina}{}{Technical service, software installation and maintenance of company network.}
+\cventry{Mar 2000--May 2004}{Software Developer}{Fernando Hermo y Asoc.}{Buenos Aires, Argentina}{}{ERP and CRM development using VB 6, SQL Server and Crystal Reports.}
+
+\section{Freelance Projects}
+\cventry{May--Sep 2018}{Software Developer}{Essentia, Family Office}{Lugano, Switzerland}{}{Desktop application written in Scala}
+\cventry{Oct--Nov 2017}{Software Developer}{Essentia, Family Office}{Lugano, Switzerland}{}{Desktop application written in C\#}
+
+\cventry{Dec 2010--Jan 2011}{Web Developer}{vCelebrate}{Buenos Aires, Argentina}{}{Web application using Facebook API and Adobe Flex.}
+\cventry{Apr--Dec 2008}{Full Stack Developer}{Andrea Importadora}{Buenos Aires, Argentina}{}{E-commerce platform using ASP.NET and MySQL.}
+\cventry{Feb--Apr 2006}{Full Stack Developer}{Reid Systems, ApareSer}{Buenos Aires, Argentina}{}{Web application using ASP.NET, C\# and SQL Server 2000.}
+\cventry{Apr--Oct 2005}{Full Stack Developer}{Dream On}{Buenos Aires, Argentina}{}{Invoicing desktop application using C\# and PostgreSQL.}
+
+\section{Technical Skills}
+\cvitem{Languages}{Java, C\#, C/C++, Scala, Haskell, Python, R, SQL, Datalog (QL), JavaScript, Perl, LLVM/Clang, VB.NET, ASP.NET, ASP, PHP, Assembler, Pascal, VB 6.0}
+\cvitem{Paradigms}{OOP, Design by Contract, Functional and Logic programming, UML, Design Patterns, Database design}
+\cvitem{Databases}{PostgreSQL, MySQL, SQL Server, Oracle, SQLite, Crystal Reports}
+\cvitem{SCMs}{Git, Subversion, CVS}
+\cvitem{IDEs}{Visual Studio .NET, Eclipse, Xcode, IntelliJ, IBM WebSphere Message Broker}
+\cvitem{IT}{Linux, Shell Scripting, VirtualBox, VMWare, Microsoft Virtual Server, Parallels, Samba, Apache, vsFTPd, OpenSSH, Tomcat, Microsoft MSMQ, ActiveMQ}
+
+\section{Teaching Experience}
+\cvitem{Apr 2013--Nov 2017}{\textbf{Teaching Assistant}, \emph{University of Lugano}, Switzerland. Multiple courses.}
+\cvitem{Apr 2006--Nov 2010}{\textbf{Teaching Assistant}, \emph{University of Buenos Aires}, Argentina. Multiple courses.}
+\cvitem{Apr--Oct 2008}{\textbf{Scientific Popularizer}, \emph{Informatics dpt., University of Buenos Aires}, Argentina.}
+
+\renewcommand{\refname}{Publications}
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{pubs}
+
+\section{Language Proficiency}
+\cvitem{Spanish}{\textbf{Native speaker}}
+\cvitem{English}{\textbf{Proficient User}: Level C2 under CEFR}
+\cvitem{Italian}{\textbf{Proficient User}: Level C1 under CEFR}
+\cvitem{French}{\textbf{Independent User}: Level B1 under CEFR}
+
+\end{document}
