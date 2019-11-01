@@ -406,14 +406,14 @@
 % description label
 \newcommand*\descriptionlabel[1]{\hspace\labelsep\normalfont\bfseries#1}
 % hooks to adjust spacing (idea by Jakob Schiøtz; see http://dcwww.camd.dtu.dk/~schiotz/comp/LatexTips/tweaklist.sty)
-\RequirePackage{tweaklist}% distributed with moderncv, not found on ctan and slightly modified
-\renewcommand*{\itemhook}{
-  \setlength{\topsep}{0pt}%
-  \setlength{\parsep}{0pt}%
-  \setlength{\parskip}{0pt}%
-  \setlength{\itemsep}{0pt}}
-\renewcommand*{\enumhook}{\itemhook{}}
-\renewcommand*{\deschook}{\itemhook{}}
+% \RequirePackage{tweaklist}% distributed with moderncv, not found on ctan and slightly modified
+% \renewcommand*{\itemhook}{
+%   \setlength{\topsep}{0pt}%
+%   \setlength{\parsep}{0pt}%
+%   \setlength{\parskip}{0pt}%
+%   \setlength{\itemsep}{0pt}}
+% \renewcommand*{\enumhook}{\itemhook{}}
+% \renewcommand*{\deschook}{\itemhook{}}
 
 % classical \today definition
 \def\today{\ifcase\month\or
