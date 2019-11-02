@@ -121,11 +121,13 @@
   \renewcommand*{\marvosymbol}[1]{{\fontfamily{mvs}\fontencoding{U}\fontseries{m}\fontshape{n}\selectfont\char#1}}
 %\fi
 
+\definecolor[named]{ACMDarkBlue}{cmyk}{1,0.58,0,0.11}
+
 % hyper links (hyperref is loaded at the end of the preamble to pass options required by loaded packages such as CJK)
 \RequirePackage{url}
 \urlstyle{tt}
 \AtEndPreamble{
-  \RequirePackage[unicode,pdfpagelabels=false]{hyperref}% unicode is required for unicode pdf metadata, pdfpagelabels=false is required to avoid a warning setting it automatically to false anyway, because hyperref detects \thepage as undefined (why?)
+  \RequirePackage[unicode,pdfpagelabels=false,colorlinks=true,urlcolor=ACMDarkBlue,linkcolor=color2]{hyperref}% unicode is required for unicode pdf metadata, pdfpagelabels=false is required to avoid a warning setting it automatically to false anyway, because hyperref detects \thepage as undefined (why?)
   \hypersetup{
     breaklinks,
     baseurl       = http://,
