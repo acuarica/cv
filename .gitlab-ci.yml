@@ -1,8 +1,7 @@
-
 pages:
   image: dsferruzza/latex
   script:
-    - latexmk -pdf -bibtex CV-LuisMastrangelo.tex
+    - latexmk -pdf CV-LuisMastrangelo.tex
     - mkdir public/
     - cp CV-LuisMastrangelo.pdf public/
   artifacts:
