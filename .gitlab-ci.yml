@@ -6,6 +6,7 @@ pages:
     - cp CV-LuisMastrangelo.pdf public/
   artifacts:
     paths:
+      - public/index.html
       - public/CV-LuisMastrangelo.pdf
   only:
     - master
