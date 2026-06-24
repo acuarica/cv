@@ -7,13 +7,13 @@
 \usepackage[scale=0.77]{geometry}
 
 \input{gitinfo.tex}
-\newcommand{\gitinfo}{\href{https://github.com/acuarica/cv/commit/\gitcommit}{Revision \gitcommit}}
+\newcommand{\gitinfo}{\href{https://github.com/acuarica/cv/commit/\gitcommit}{\texttt{\footnotesize{Revision \gitcommit}}}}
 
 \setlength{\hintscolumnwidth}{3.35cm}
 
 \firstname{Luis}
 \familyname{Mastrangelo}
-\title{Senior Software Engineer\newline\newline \texttt{\scriptsize{\gitinfo}}}
+\title{Senior Software Engineer}
 
 \address{Hohlstrasse 485a}{8048 Zurich, Switzerland}
 \mobile{+41 789 44 2022}
@@ -29,6 +29,8 @@
     }
 
 \begin{document}
+
+\fancyfoot[L]{\gitinfo}
 
 \makecvtitle
 
