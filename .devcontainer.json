@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+	"name": "CV :: TeX Live",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// "image": "docker.io/texlive/texlive:latest-small",
+	"image": "docker.io/danteev/texlive@sha256:27284a6f0c69fc4efd93ecef6ff8937ea1957d300d0f58065aafbb3e0b6a2c52", // danteev/texlive:2026-A
+	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"james-yu.latex-workshop"
+				// "streetsidesoftware.code-spell-checker"
+			]
+		}
+	}
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "npm install"
+}
